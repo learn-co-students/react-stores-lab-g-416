@@ -16,7 +16,7 @@ class Store {
 
 	addListener (listener) {
 		const removeListener = () => {
-			this.listeners = this.listeners.filter(val => val !== listener)
+			this.listeners = this.listeners.filter(fn => fn !== listener)
 		}
 		
 		this.listeners.push(listener);

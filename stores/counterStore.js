@@ -8,11 +8,15 @@ class CounterStore extends Store {
 	}
 
 	increment () {
-		this.setState(this.getState() + 1)
+		const prevState = this.getState()
+
+		this.setState(prevState + 1)
 	}
 
 	decrement () {
-		this.setState(this.getState() - 1)
+		const prevState = this.getState()
+
+		this.setState(prevState - 1)
 	}
 
 }
