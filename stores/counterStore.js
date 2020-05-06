@@ -3,8 +3,7 @@ const Store = require("./Store")
 class CounterStore extends Store {
 
 	constructor () {
-		super ();
-		this.state = 0;
+		super (0)
 	}
 
 	increment () {
