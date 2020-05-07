@@ -5,7 +5,7 @@ const actions = require("../actions");
 class App extends React.Component {
 
 	constructor (props) {
-		super (props);
+		super(props);
 		this.state = {counter: counterStore.getState()};
 		this.handleDecClick = this.handleDecClick.bind(this);
 		this.handleIncClick = this.handleIncClick.bind(this);
